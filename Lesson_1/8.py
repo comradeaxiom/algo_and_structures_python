@@ -4,13 +4,4 @@
 # но при этом не кратен 100, либо кратен 400.
 
 
-YEAR = int(input('Введите год: '))
 
-if YEAR % 400 == 0:
-    print(f"Год {YEAR} високосный")
-elif YEAR % 100 == 0 and YEAR % 400 != 0:
-    print(f"Год {YEAR} невисокосный")
-elif YEAR % 4 == 0:
-    print(f"Год {YEAR} високосный")
-else:
-    print(f"Год {YEAR} невисокосный")

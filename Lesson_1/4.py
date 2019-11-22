@@ -9,20 +9,3 @@
 символ алфавита от 'a' до 'f' включительно.
 """
 
-
-from random import random
-
-VAR_1 = int(input("Введите нижнюю границу: "))
-VAR_2 = int(input("Введите верхнюю границу: "))
-RES = int(random() * (VAR_2 - VAR_1 + 1)) + VAR_1
-print(RES)
-
-VAR_1 = float(input("Введите нижнюю границу: "))
-VAR_2 = float(input("Введите верхнюю границу: "))
-RES = random() * (VAR_2 - VAR_1) + VAR_1
-print(RES)
-
-VAR_1 = ord(input("Введите нижнюю границу: "))
-VAR_2 = ord(input("Введите верхнюю границу: "))
-RES = int(random() * (VAR_2 - VAR_1 + 1)) + VAR_1
-print(RES)

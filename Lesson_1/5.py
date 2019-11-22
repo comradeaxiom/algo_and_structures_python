@@ -2,20 +2,4 @@
 # алфавита они стоят, и сколько между ними находится букв.
 
 
-import sys
 
-try:
-    VAR_1 = ord(input("Первая буква: "))
-    VAR_2 = ord(input("Вторая буква: "))
-except:
-    print('Необходимо ввести буквы ')
-    sys.exit(1)
-if VAR_1 == VAR_2:
-    print('Введены одинаковые буквы ')
-    sys.exit(1)
-
-VAR_1 = VAR_1 - ord('a') + 1
-VAR_2 = VAR_2 - ord('a') + 1
-
-print(f"Позиции: {VAR_1} и {VAR_2}")
-print(f"Между буквами символов: {abs(VAR_1 - VAR_2) - 1}")

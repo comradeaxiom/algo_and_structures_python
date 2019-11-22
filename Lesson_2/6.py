@@ -5,3 +5,27 @@
 число, чем то, что загадано. Если за 10 попыток число не отгадано,
 то вывести загаданное число.
 """
+
+import random
+
+NUMB = random.randint(0, 100)
+USR_TRY = 10
+while USR_TRY !=0:
+    try:
+        USR_INP = int(input(f"Попыток осталось: {USR_TRY}. Введите число"))
+    except ValueError:
+        print("Допустимы только числа от 1 до 100")
+        continue
+    if USR_INP < 0 or USR_INP > 100:
+        print("Допустимы только числа от 1 до 100")
+        continue
+    elif USR_INP == NUMB:
+        print("Поздравляю, вы угадали!")
+        break
+    elif USR_INP > NUMB:
+        print("Неверно, ваше число больше")
+    else:
+        print("Неверно, ваше число больше")
+    USR_TRY -= 1
+else:
+    print(f"Закончились попытки. Правильный ответ {NUMB}")

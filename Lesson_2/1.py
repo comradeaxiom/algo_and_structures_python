@@ -9,3 +9,25 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+
+
+while True:
+    NUM_1 = int(input("Введите первое число: "))
+    OPER = input("Введите желаемое действие (+,-,/,*) или 0 для выхода: ")
+    NUM_2 = int(input("Введите второе число: "))
+    if OPER == '0':
+        break
+    if OPER in "+-*/":
+        if OPER == '+':
+            RESULT = NUM_1 + NUM_2
+        if OPER == '-':
+            RESULT = NUM_1 - NUM_2
+        if OPER == '*':
+            RESULT = NUM_1 * NUM_2
+        if OPER == '/':
+            if OPER != 0:
+                RESULT = NUM_1 / NUM_2
+            else:
+                print("Деление на ноль невозможно!")
+
+    print(RESULT)
